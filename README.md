@@ -1,2 +1,2 @@
 # TeamsStuff
-For Teams PS sxripts and things
+For Teams PS scripts and things
