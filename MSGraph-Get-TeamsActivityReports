@@ -9,4 +9,6 @@
 ##note: same issue around response seems to affect a number of the Get-MgReportxxxxx commands. Can use the same Invoke request and just replace the URI with the 
 ##report you want
 
-Invoke-MgGraphRequest -Uri "https://graph.microsoft.com/v1.0/reports/getTeamsUserActivityUserDetail(period='D30')" -OutputFilePath C:\users\mark\Documents\teamsreport.csv
+Connect-MgGraph -Scopes Reports.Read.All
+
+Invoke-MgGraphRequest -Uri "https://graph.microsoft.com/v1.0/reports/getTeamsUserActivityUserDetail(period='D30')" -OutputFilePath C:\users\username\Documents\teamsreport.csv
